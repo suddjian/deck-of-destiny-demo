@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+      #game {
+        width: calc(100vw - 300px);
+        height: 100vh;
+      }
+      #chattable {
+        width: 300px;
+        height: 100vh;
+      }
+    </style>
+    <script src="https://chattable.neocities.org/scripts/main.min.js"></script>
+    <script>
+      chattable.initialize({
+        theme : "Comment Section"
+      });
+    </script>
+  </head>
+  <body>
+    <iframe id="game" src="https://playingcards.io/k27efu"></iframe>
+    <iframe src='https://iframe.chat/embed?chat=51312613' id='chattable' frameborder='none'></iframe>
+  </body>
+</html>
